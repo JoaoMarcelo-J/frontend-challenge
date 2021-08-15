@@ -13,26 +13,21 @@ import { ReviewVideos } from "../components/ReviewVideos";
 import { api } from "../services/api";
 import { SearchResult } from "../components/SearchResult";
 import { BookType } from "../types/Book";
-  
-
 
 export default function Home() {
-  const [books, setBooks] = useState<BookType[]>([])
-  const [search, setSearch] = useState('')
+  const [books, setBooks] = useState<BookType[]>([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
+    getBooks();
+  }, [search]);
 
-    getBooks()
+  async function getBooks() {
+    if (search) {
+      const res = await api.get(`volumes?q=${search}`);
 
-  }, [search])
-
-  async function getBooks(){
-    if(search){
-      
-      const res = await api.get(`volumes?q=${search}`)
-
-      setBooks(res.data.items)
-      console.log(res.data.items)
+      setBooks(res.data.items);
+      console.log(res.data.items);
     }
   }
 
@@ -43,44 +38,43 @@ export default function Home() {
       </Head>
 
       <Container>
-        <SearchInput search={search} setSearch={setSearch}/>
+        <SearchInput search={search} setSearch={setSearch} />
 
         {search ? (
           <SearchResult data={books} />
-          ) : (
-            <Content>
-              <Greeatings>
-                <h1>
-                  Hi, <span>Vinicius Paes Berna</span>👋
-                </h1>
-              </Greeatings>
+        ) : (
+          <Content>
+            <Greeatings>
+              <h1>
+                Hi, <span>Fotontech</span>👋
+              </h1>
+            </Greeatings>
 
-              <section>
-                <Heading>
-                  <h2>Discover new book</h2>
-                  <Link href="/search">
-                    <a>More</a>
-                  </Link>
-                </Heading>
+            <section>
+              <Heading>
+                <h2>Discover new book</h2>
+                <Link href="/search">
+                  <a>More</a>
+                </Link>
+              </Heading>
 
-                <BooksSlide />
-              </section>
-              <section>
-                <Heading>
-                  <h2>Currently reading</h2>
-                  <Link href="/">
-                    <a>All</a>
-                  </Link>
-                </Heading>
+              <BooksSlide />
+            </section>
+            <section>
+              <Heading>
+                <h2>Currently reading</h2>
+                <Link href="/">
+                  <a>All</a>
+                </Link>
+              </Heading>
 
-                <CurrentlyReading />
-              </section>
+              <CurrentlyReading />
+            </section>
 
-              <ReviewVideos />
-            </Content>
-          )
-        }
-      
+            <ReviewVideos />
+          </Content>
+        )}
+
         <NavigationBar activeItem={1} />
       </Container>
     </>
@@ -95,7 +89,6 @@ export default function Home() {
 // }
 
 // export const getStaticProps: GetStaticProps = async () => {
-  
 
 //   return {
 //     props: {
