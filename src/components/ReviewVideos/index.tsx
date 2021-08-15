@@ -14,7 +14,7 @@ export function ReviewVideos() {
         </div>
         <Link href="https://www.youtube.com/watch?v=vBzBgewl4ac">
           <a>
-            <Image width={335} height={181} src="/assets/thumb1.png" />
+            <img src="/assets/thumb1.png" />
           </a>
         </Link>
       </div>

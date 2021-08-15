@@ -14,7 +14,7 @@ export function SearchResult({ data }: SearchResultProps) {
         <Card key={book.id}>
           <Link href={`books/${book.id}`}>
             <a>
-              <Image
+              <img
                 width={105}
                 height={153}
                 src={

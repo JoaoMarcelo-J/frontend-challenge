@@ -9,7 +9,7 @@ interface SearchInputProps {
 export function SearchInput({ search, setSearch }: SearchInputProps) {
   return (
     <Container>
-      <Image width={16} height={16} src="/assets/search.svg" alt="Search" />
+      <img src="/assets/search.svg" alt="Search" />
       <SearchInputComponent
         placeholder="Search book"
         maxLength={255}
