@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import Head from "next/Head";
+import { Head } from "next/document";
 import Link from "next/link";
-
-import { GetStaticPaths, GetStaticProps } from "next";
 
 import { Container, Content, Greeatings, Heading } from "../styles/home";
 import { NavigationBar } from "../components/NavigationBar";

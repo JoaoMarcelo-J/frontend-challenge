@@ -1,5 +1,4 @@
 import { Container, SearchInputComponent } from "./styles";
-import Image from "next/image";
 
 interface SearchInputProps {
   search: string;
