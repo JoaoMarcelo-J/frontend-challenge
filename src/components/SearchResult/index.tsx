@@ -1,7 +1,6 @@
 import { Container, Card } from "./styles";
 import { BookType } from "../../types/Book";
 import Link from "next/link";
-import Image from "next/image";
 
 interface SearchResultProps {
   data: BookType[];

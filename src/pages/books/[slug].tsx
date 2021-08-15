@@ -5,7 +5,6 @@ import { NavigationBooks } from "../../components/NavigationBooks";
 import { api } from "../../services/api";
 import { BookType } from "../../types/Book";
 import { ContainerHeader, ContainerContent } from "../../styles/bookDetails";
-import Image from "next/image";
 
 interface BooksProps {
   book: BookType;
@@ -21,11 +20,7 @@ export default function Books({ book }: BooksProps) {
               <BiArrowBack size="20" />
             </a>
           </Link>
-          <Image
-            width={151}
-            height={234}
-            src={book.volumeInfo.imageLinks?.thumbnail}
-          />
+          <img src={book.volumeInfo.imageLinks?.thumbnail} />
         </div>
       </ContainerHeader>
 

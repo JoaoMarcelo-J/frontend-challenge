@@ -56,10 +56,10 @@ export const BookCard = styled.div`
   }
 
   img {
-    width: 72px;
-    height: 111px;
     margin: auto;
     margin-top: -8px;
+    width: 72px;
+    height: 111px;
   }
 
   & + & {
@@ -72,4 +72,16 @@ export const BookCardFooter = styled.div`
   display: flex;
   align-items: center;
   gap: 0.2rem;
+
+  span {
+    margin-top: 22px;
+  }
+
+  strong {
+    margin-top: 22px;
+  }
+
+  svg {
+    margin-top: 22px;
+  }
 `;
