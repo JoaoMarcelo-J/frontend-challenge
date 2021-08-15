@@ -1,5 +1,6 @@
 import { Container } from "./styles";
 import Link from "next/link";
+import Image from "next/image";
 
 export function ReviewVideos() {
   return (
@@ -13,7 +14,7 @@ export function ReviewVideos() {
         </div>
         <Link href="https://www.youtube.com/watch?v=vBzBgewl4ac">
           <a>
-            <img src="/assets/thumb1.png" />
+            <Image width={335} height={181} src="/assets/thumb1.png" />
           </a>
         </Link>
       </div>

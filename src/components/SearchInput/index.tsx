@@ -1,4 +1,5 @@
 import { Container, SearchInputComponent } from "./styles";
+import Image from "next/image";
 
 interface SearchInputProps {
   search: string;
@@ -8,7 +9,7 @@ interface SearchInputProps {
 export function SearchInput({ search, setSearch }: SearchInputProps) {
   return (
     <Container>
-      <img src="/assets/search.svg" alt="Search" />
+      <Image width={16} height={16} src="/assets/search.svg" alt="Search" />
       <SearchInputComponent
         placeholder="Search book"
         maxLength={255}

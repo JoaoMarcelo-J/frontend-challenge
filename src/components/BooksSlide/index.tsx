@@ -4,6 +4,8 @@ import Carousel from "react-elastic-carousel";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 // import { BookCardAnimated } from './BookCardAnimated';
 
+import Image from "next/image";
+
 const breakPoints = [{ width: 374, itensToShow: 1 }];
 
 export function BooksSlide() {
@@ -31,7 +33,7 @@ export function BooksSlide() {
               <span>Read Now</span>
             </BookCardFooter>
           </div>
-          <img src="/assets/book.png" alt="Book" />
+          <Image height={111} width={72} src="/assets/book.png" alt="Book" />
         </BookCard>
         {/* {</BookCardAnimated>} */}
         {/* {<BookCardAnimated>} */}
@@ -47,7 +49,7 @@ export function BooksSlide() {
               <span>Read Now</span>
             </BookCardFooter>
           </div>
-          <img src="/assets/book2.png" alt="Book" />
+          <Image height={111} width={72} src="/assets/book2.png" alt="Book" />
         </BookCard>
         {/* {</BookCardAnimated>} */}
       </Carousel>
