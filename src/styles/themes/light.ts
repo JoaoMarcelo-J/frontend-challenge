@@ -16,5 +16,6 @@ export default {
     infoCard: "#EEF5DB",
     infoCardText: "#74776d",
     isActiveNavBar: "#313131",
+    header: "#eef5db",
   },
 };

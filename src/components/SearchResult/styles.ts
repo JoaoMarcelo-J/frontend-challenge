@@ -11,6 +11,10 @@ export const Container = styled.main`
   width: 90%;
   overflow-y: auto;
   height: 72vh;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 `;
 
 export const Card = styled.article`

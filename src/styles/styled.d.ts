@@ -19,6 +19,7 @@ declare module "styled-components" {
       infoCard: string;
       infoCardText: string;
       isActiveNavBar: string;
+      header: string;
     };
   }
 }

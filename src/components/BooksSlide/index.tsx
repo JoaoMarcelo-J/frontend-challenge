@@ -8,7 +8,7 @@ const breakPoints = [{ width: 374, itensToShow: 1 }];
 
 export function BooksSlide() {
   const { width } = useWindowDimensions();
-  const isMobile = width > 480 ? false : true;
+  const isMobile = width > 1024 ? false : true;
 
   return (
     <Container>
@@ -17,6 +17,7 @@ export function BooksSlide() {
         isRTL={false}
         enableMouseSwipe={false}
         showArrows={isMobile ? false : true}
+        itemsToShow={isMobile ? 1 : 3}
       >
         {/* {<BookCardAnimated>} */}
         <BookCard>
@@ -50,6 +51,34 @@ export function BooksSlide() {
           <img src="/assets/book2.png" alt="Book" />
         </BookCard>
         {/* {</BookCardAnimated>} */}
+        <BookCard>
+          <div>
+            <div>
+              <h1>Originals</h1>
+              <p>Adam Grant</p>
+            </div>
+            <BookCardFooter>
+              <BiBarChartSquare size="20" />
+              <strong>60+</strong>
+              <span>Read Now</span>
+            </BookCardFooter>
+          </div>
+          <img src="/assets/book2.png" alt="Book" />
+        </BookCard>
+        <BookCard>
+          <div>
+            <div>
+              <h1>Originals</h1>
+              <p>Adam Grant</p>
+            </div>
+            <BookCardFooter>
+              <BiBarChartSquare size="20" />
+              <strong>60+</strong>
+              <span>Read Now</span>
+            </BookCardFooter>
+          </div>
+          <img src="/assets/book2.png" alt="Book" />
+        </BookCard>
       </Carousel>
     </Container>
   );

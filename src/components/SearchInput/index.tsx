@@ -1,11 +1,8 @@
+import { useSearchResult } from "../../hooks/useSearchResult";
 import { Container, SearchInputComponent } from "./styles";
 
-interface SearchInputProps {
-  search: string;
-  setSearch: (search: string) => void;
-}
-
-export function SearchInput({ search, setSearch }: SearchInputProps) {
+export function SearchInput() {
+  const { search, setSearch } = useSearchResult();
   return (
     <Container>
       <img src="/assets/search.svg" alt="Search" />

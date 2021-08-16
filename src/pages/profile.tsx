@@ -2,7 +2,7 @@ import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
 import { useContext } from "react";
 import { useTheme } from "../hooks/useTheme";
-import { NavigationBar } from "../components/NavigationBar";
+import { NavigationBar } from "../components/Mobile/NavigationBar";
 import {
   Container,
   ProfileImageContainer,

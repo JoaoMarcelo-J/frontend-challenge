@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
 
   margin-top: 1rem;
 
   .rec.rec-carousel {
-    max-width: 700px;
+    max-width: 10000px;
   }
 
   .rec.rec-pagination {
@@ -74,14 +75,14 @@ export const BookCardFooter = styled.div`
   gap: 0.2rem;
 
   span {
-    margin-top: 22px;
+    margin-top: 1.375rem;
   }
 
   strong {
-    margin-top: 22px;
+    margin-top: 1.375rem;
   }
 
   svg {
-    margin-top: 22px;
+    margin-top: 1.375rem;
   }
 `;

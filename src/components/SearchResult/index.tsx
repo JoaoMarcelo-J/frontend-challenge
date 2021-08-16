@@ -1,15 +1,14 @@
 import { Container, Card } from "./styles";
 import { BookType } from "../../types/Book";
 import Link from "next/link";
+import { useSearchResult } from "../../hooks/useSearchResult";
 
-interface SearchResultProps {
-  data: BookType[];
-}
+export function SearchResult() {
+  const { books } = useSearchResult();
 
-export function SearchResult({ data }: SearchResultProps) {
   return (
     <Container>
-      {data?.map((book) => (
+      {books?.map((book) => (
         <Card key={book.id}>
           <Link href={`books/${book.id}`}>
             <a>
