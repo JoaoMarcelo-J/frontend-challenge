@@ -30,7 +30,6 @@ export function SearchResultProvider({ children }: SearchResultProviderProps) {
       const res = await api.get(`volumes?q=${search}`);
 
       setBooks(res.data.items);
-      console.log(res.data.items);
     }
   }
 

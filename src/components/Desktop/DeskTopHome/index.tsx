@@ -1,8 +1,8 @@
 import { useSearchResult } from "../../../hooks/useSearchResult";
 import { BooksSlide } from "../../BooksSlide";
-import { CurrentlyReading } from "../../CurrentlyReading";
 import { ReviewVideos } from "../../ReviewVideos";
 import { SearchResult } from "../../SearchResult";
+import { CurrentlyReadingDesktop } from "../CurrentlyReadingDesktop";
 import { Header } from "../Header";
 import { Container } from "./styles";
 
@@ -17,7 +17,7 @@ export function DeskTopHome() {
         ) : (
           <>
             <BooksSlide />
-            <CurrentlyReading />
+            <CurrentlyReadingDesktop />
             <ReviewVideos />
           </>
         )}
