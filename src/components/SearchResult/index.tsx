@@ -19,7 +19,7 @@ export function SearchResult() {
                   src={
                     book.volumeInfo?.imageLinks?.thumbnail
                       ? book.volumeInfo?.imageLinks?.thumbnail
-                      : "noImage"
+                      : "/assets/noImage.png"
                   }
                   alt={book.volumeInfo.title}
                 />

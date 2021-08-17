@@ -8,6 +8,11 @@ export const Container = styled.div`
 
   margin-top: 1rem;
 
+  .mobileContainer {
+    display: flex;
+    overflow: auto;
+  }
+
   .rec.rec-carousel {
     max-width: 10000px;
   }
@@ -69,7 +74,6 @@ export const BookCard = styled.div`
   }
 
   & + & {
-    transform: scale(1.4);
     margin-left: 1.5rem;
   }
 `;

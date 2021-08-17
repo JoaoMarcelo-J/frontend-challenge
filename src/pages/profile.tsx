@@ -3,6 +3,7 @@ import { ThemeContext } from "styled-components";
 import { useContext } from "react";
 import { useTheme } from "../hooks/useTheme";
 import { NavigationBar } from "../components/Mobile/NavigationBar";
+import Head from "next/head";
 import {
   Container,
   ProfileImageContainer,
@@ -10,8 +11,6 @@ import {
   SwitchContainer,
 } from "../styles/profile";
 
-import Link from "next/link";
-import { BiArrowBack } from "react-icons/bi";
 import { useWindowDimensions } from "../hooks/useWindowDimensions";
 import { Header } from "../components/Desktop/Header";
 
@@ -25,6 +24,9 @@ export default function Profile() {
 
   return (
     <>
+      <Head>
+        <title>Profile | FotonBooks</title>
+      </Head>
       {!isMobile && <Header />}
 
       <Container>
