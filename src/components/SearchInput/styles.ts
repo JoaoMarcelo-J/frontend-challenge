@@ -4,6 +4,7 @@ export const Container = styled.form`
   height: 3rem;
   display: flex;
   margin: 3.5rem 1.5rem 2.2rem;
+  align-items: center;
   padding-right: 10px;
   background: ${(props) => props.theme.colors.inputBackground};
   border-radius: 0.6rem;
@@ -13,6 +14,10 @@ export const Container = styled.form`
   img {
     width: 1rem;
     margin: 1rem;
+  }
+
+  svg:hover {
+    transform: scale(1.2);
   }
 
   @media (min-width: 1024px) {

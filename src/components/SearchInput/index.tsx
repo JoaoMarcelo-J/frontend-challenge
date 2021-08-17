@@ -1,5 +1,6 @@
 import { useSearchResult } from "../../hooks/useSearchResult";
 import { Container, SearchInputComponent } from "./styles";
+import { CgClose } from "react-icons/cg";
 
 export function SearchInput() {
   const { search, setSearch, setMaxResults } = useSearchResult();
@@ -15,6 +16,7 @@ export function SearchInput() {
           setMaxResults(18);
         }}
       />
+      {search && <CgClose onClick={() => setSearch("")} size="24" />}
     </Container>
   );
 }
