@@ -19,6 +19,12 @@ export const Container = styled.main`
     border: none;
     background-color: ${(props) => props.theme.colors.header};
     color: ${(props) => props.theme.colors.title};
+
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 70%;
+    }
   }
 
   @media (min-width: 1024px) {
