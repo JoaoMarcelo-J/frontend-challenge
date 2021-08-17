@@ -2,6 +2,7 @@ import { BiBarChartSquare } from "react-icons/bi";
 import { Container, BookCard, BookCardFooter } from "./styles";
 import Carousel from "react-elastic-carousel";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
+import Link from "next/link";
 // import { BookCardAnimated } from './BookCardAnimated';
 
 const breakPoints = [{ width: 374, itensToShow: 1 }];
@@ -54,30 +55,30 @@ export function BooksSlide() {
         <BookCard>
           <div>
             <div>
-              <h1>Originals</h1>
-              <p>Adam Grant</p>
+              <h1>Tonka</h1>
+              <p>Ryan G. Van Cleave</p>
             </div>
             <BookCardFooter>
               <BiBarChartSquare size="20" />
-              <strong>60+</strong>
+              <strong>140+</strong>
               <span>Read Now</span>
             </BookCardFooter>
           </div>
-          <img src="/assets/book2.png" alt="Book" />
+          <img src="/assets/tonka.jpg" alt="Book" />
         </BookCard>
         <BookCard>
           <div>
             <div>
-              <h1>Originals</h1>
-              <p>Adam Grant</p>
+              <h1>A Sereia</h1>
+              <p>Rhys Hughes</p>
             </div>
             <BookCardFooter>
               <BiBarChartSquare size="20" />
-              <strong>60+</strong>
+              <strong>30+</strong>
               <span>Read Now</span>
             </BookCardFooter>
           </div>
-          <img src="/assets/book2.png" alt="Book" />
+          <img src="/assets/sereia.jpg" alt="Book" />
         </BookCard>
       </Carousel>
     </Container>
