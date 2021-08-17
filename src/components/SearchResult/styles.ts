@@ -12,6 +12,15 @@ export const Container = styled.main`
   overflow-y: auto;
   height: 72vh;
 
+  button {
+    margin-bottom: 4px;
+    border-radius: 0.25rem;
+    height: 2rem;
+    border: none;
+    background-color: ${(props) => props.theme.colors.header};
+    color: ${(props) => props.theme.colors.title};
+  }
+
   @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }

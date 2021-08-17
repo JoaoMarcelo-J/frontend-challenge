@@ -24,6 +24,9 @@ export const Container = styled.section`
 
     img {
       margin-top: 1rem;
+      border-radius: 5px 5px 0px 0px;
+      height: 181px;
+      width: 335px;
 
       @media (min-width: 1024px) {
         margin-right: 1rem;

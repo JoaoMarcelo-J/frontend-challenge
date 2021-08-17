@@ -40,6 +40,11 @@ export const BookCard = styled.div`
   background: purple;
   color: #fff;
 
+  background-image: url("/assets/path.svg"), url("/assets/rectangle.svg"),
+    url("/assets/oval-card.svg"), url("/assets/oval-card2.svg");
+  background-repeat: no-repeat;
+  background-position: 61% -4%, 52% 75%, 1% 88%, 49% 10%;
+
   div {
     margin-bottom: 1.5rem;
     margin-top: -0.3rem;

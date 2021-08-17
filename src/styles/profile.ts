@@ -62,7 +62,7 @@ export const OptionsContainer = styled.div`
     padding: 0 1rem;
     border-radius: 0.6rem;
     margin-top: 0.625rem;
-    background-color: ${(props) => props.theme.colors.inputBackground};
+    background-color: ${(props) => props.theme.colors.header};
 
     &::placeholder {
       color: ${(props) => props.theme.colors.placeholder};
