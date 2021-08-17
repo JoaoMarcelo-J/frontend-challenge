@@ -27,8 +27,16 @@ export const Container = styled.main`
     }
   }
 
+  @media (min-width: 768px), (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `;
 
