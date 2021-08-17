@@ -15,13 +15,13 @@ export const Container = styled.header`
   }
 
   h1 {
-    margin-top: 13px;
+    margin-top: 0.8rem;
   }
 
   nav {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 
   ul {

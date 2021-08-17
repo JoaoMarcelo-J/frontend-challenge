@@ -5,22 +5,31 @@ import { NavigationBooks } from "../../components/Mobile/NavigationBooks";
 import { api } from "../../services/api";
 import { BookType } from "../../types/Book";
 import { ContainerHeader, ContainerContent } from "../../styles/bookDetails";
+import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 
 interface BooksProps {
   book: BookType;
 }
 
 export default function Books({ book }: BooksProps) {
+  const { width } = useWindowDimensions();
+
+  const isMobile = width > 1024 ? false : true;
+
   return (
     <>
       <ContainerHeader>
         <div>
           <Link href="/">
-            <a>
-              <BiArrowBack size="20" />
-            </a>
+            <BiArrowBack size="20" />
           </Link>
+
           <img src={book.volumeInfo.imageLinks?.thumbnail} />
+          <ul>
+            <li>Read</li>
+            <li>Listen</li>
+            <li>Share</li>
+          </ul>
         </div>
       </ContainerHeader>
 
@@ -37,7 +46,7 @@ export default function Books({ book }: BooksProps) {
         />
       </ContainerContent>
 
-      <NavigationBooks />
+      {isMobile && <NavigationBooks />}
     </>
   );
 }

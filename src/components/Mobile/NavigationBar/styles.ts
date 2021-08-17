@@ -18,11 +18,11 @@ export const Container = styled.nav`
       flex-flow: column;
 
       img {
-        width: 16px;
-        margin-bottom: 10px;
+        width: 1rem;
+        margin-bottom: 0.625rem;
       }
       span {
-        font-size: 10px;
+        font-size: 0.625rem;
       }
     }
   }

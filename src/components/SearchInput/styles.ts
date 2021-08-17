@@ -11,13 +11,13 @@ export const Container = styled.form`
   line-height: 3rem;
   box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.12);
   img {
-    width: 16px;
+    width: 1rem;
     margin: 1rem;
   }
 
   @media (min-width: 1024px) {
     width: 400px;
-    margin: 35px 20px 25px 300px;
+    margin: 2.2rem 1.25rem 1.6rem 18.75rem;
   }
 `;
 
