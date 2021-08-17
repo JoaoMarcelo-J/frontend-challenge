@@ -37,6 +37,10 @@ export const Container = styled.section`
       @media (min-width: 1024px) {
         margin-right: 1rem;
       }
+
+      @media (min-width: 713px), (max-width: 1027px) {
+        margin-right: 1rem;
+      }
     }
 
     @media (min-width: 1024px) {
