@@ -28,6 +28,12 @@ export const InfoCard = styled.div`
       height: 136px;
 
       margin-left: 1.5rem;
+
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
 
     & > div {

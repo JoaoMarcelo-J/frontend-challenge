@@ -28,6 +28,12 @@ export const Container = styled.section`
       height: 181px;
       width: 335px;
 
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
       @media (min-width: 1024px) {
         margin-right: 1rem;
       }
