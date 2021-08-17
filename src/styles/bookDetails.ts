@@ -106,7 +106,7 @@ export const ContainerContent = styled.section`
   p {
     color: ${(props) => props.theme.colors.textPrimary};
     opacity: 80%;
-    margin-bottom: 7.5rem;
+    margin-bottom: 9.5rem;
 
     line-height: 1.5rem;
 
