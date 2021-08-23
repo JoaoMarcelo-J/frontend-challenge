@@ -1,46 +1,48 @@
-# Frontend Challenge
 
-Clone this repository and start our challenge **right now**
-
-Use React or React Native depending on the rule you are running for.
-
-**NOTE:** If you have any questions regarding the test, just send us your question on our Discord's channel **#technical-challenge** on [Foton Discord](https://discord.gg/uw55aDewNf).
-
-## API
-
-Use the [Google Books](https://developers.google.com/books/docs/v1/using)' API to recover the data that will be shown on the app.
-
-```js
-const query = 'harry potter';
-fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
-```
-
-**NOTE:** You can use the form of calling apis of your choice (Fetch, Axios, etc).  
-
-## Design/Screens
-https://www.figma.com/file/KFElqzD983WNyvMY1SaF0c/book-app?node-id=0%3A1
-
-<img width="581" alt="Screen Shot 2021-04-13 at 10 19 47" src="https://user-images.githubusercontent.com/13947203/114559257-eb55ad00-9c41-11eb-9617-4e7627cc373e.png">
+<h1 align='center'>FotonBooks 📚</h1>
 
 
-The website design has 3 screens, which are:
+<br>
 
-### Home
 
-1. Create a Pixel Perfect screen based on design above;
-2. The books must be clickable and redirect to **details** screen.
+> <h2> Technologies 🔥</h2>
 
-### Search
+<div class='techs'>
+<ul>
+    <li><a href='https://nextjs.org/'>NextJs<a/></li>
+    <li><a href='https://pt-br.reactjs.org/'>React</a></li>
+    <li><a href='https://www.typescriptlang.org/'>Typescript</a></li>
+    <li><a href='https://styled-components.com/'>Styled-components</a></li>
+</ul>
+</div>
 
-In this screen the functionalities below are **mandatory**:
+<br>
 
-1. See a list of books based on search query;
-2. Make it possible to search for more books with a "Load more" button;
-3. Search books by name;
-4. Click on one of the books to see their details.
+> <h2> Project ✨</h2>
 
-### Books details
+<div class='info-project'>
+  FotonBooks is the technical challenge suggested by <a href='https://fotontech.io/'>FotonTech</a>.
+</div>
 
-In this screen the functionalities below are **mandatory**:
+<br>
 
-1. See all information for the selected book.
+> <h2>Running the project 🚀</h2>
+
+<div class='exec-project'>
+    <ol>
+    <li> Clone the repository </l1>
+    <li> Install the <a href='https://yarnpkg.com/'><code>yarn</code></a>
+    <li> Install dependencies also with <a href='https://yarnpkg.com/'><code>yarn</code></a>
+    <li> Start the project with <code>yarn start</code>
+    </ol>
+</div>
+
+<br>
+
+> <h3> Final considerations</h3>
+
+<div>
+    <p>Developed for submission and analysis by the Foton team❤️‍🔥</p>
+    <p>If you want to test the project before installing it <a href='https://foton-book-lilac.vercel.app/'>https://foton-book-lilac.vercel.app/ </a>
+</div>
+
