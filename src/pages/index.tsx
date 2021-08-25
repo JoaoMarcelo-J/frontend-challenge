@@ -16,7 +16,7 @@ import { useWindowDimensions } from "../hooks/useWindowDimensions";
 import { useSearchResult } from "../hooks/useSearchResult";
 
 export default function Home() {
-  const { search } = useSearchResult();
+  const { search, setSearch } = useSearchResult();
   const { width } = useWindowDimensions();
 
   const isMobile = width > 1024 ? false : true;

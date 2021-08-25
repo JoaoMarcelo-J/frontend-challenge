@@ -55,6 +55,7 @@ export function SearchResultProvider({ children }: SearchResultProviderProps) {
       const res = await api.get(`volumes?q=${search}&maxResults=${maxResults}`);
 
       setBooks(res.data.items);
+      console.log(books);
     }
   }
 
