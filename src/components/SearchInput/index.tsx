@@ -5,13 +5,14 @@ import useDebounce from "../../hooks/useDebounce";
 import { useState } from "react";
 
 export function SearchInput() {
-  const { setSearch } = useSearchResult();
+  const { setSearch, setMaxResults } = useSearchResult();
   const [displayValue, setDisplayValue] = useState("");
   const debouncedChange = useDebounce(setSearch, 500);
 
   function handleChange(event) {
     setDisplayValue(event.target.value);
     debouncedChange(event.target.value);
+    setMaxResults(18);
   }
 
   return (
